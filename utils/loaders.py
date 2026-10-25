@@ -670,6 +670,8 @@ def build_all(raw_dir, out_dir, verbose=True) -> dict:
     osm["also_in_georoc"] = osm["study"].isin(OSULLIVAN_STUDIES_ALSO_IN_GEOROC)
 
     results["apatite_all"] = combine([results["georoc_apatite"], results["osullivan_apatite"]], "apatite_all")
+    am = results["apatite_all"].meta
+    am["also_in_georoc"] = am["also_in_georoc"].astype("boolean").fillna(False).astype(bool)
     results["pyrite_all"] = combine([results["ml2020_pyrite"], results["gregory_pyrite"],
                                      results["falkenberg_pyrite"]], "pyrite_all")
     for name, ds in results.items():
