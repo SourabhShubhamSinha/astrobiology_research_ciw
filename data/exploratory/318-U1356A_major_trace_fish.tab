@@ -1,0 +1,63 @@
+/* DATA DESCRIPTION:
+Citation:	Huck, Claire E; van de Flierdt, Tina; Jiménez-Espejo, Francisco Jose; Bohaty, Steven M; Röhl, Ursula; Hammond, Samantha J (2016): (Table S2) Major and trace element data for fossil fish tooth samples of IODP Hole 318-U1356A [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.858098, 
+	In supplement to: Huck, CE et al. (2016): Robustness of fossil fish teeth for seawater neodymium isotope reconstructions under variable redox conditions in an ancient shallow marine setting. Geochemistry, Geophysics, Geosystems, 17(3), 679-698, https://doi.org/10.1002/2015GC006218
+Project(s):	Integrated Ocean Drilling Program / International Ocean Discovery Program (IODP) (URI: https://www.iodp.org/)
+Coverage:	LATITUDE: -63.310230 * LONGITUDE: 135.998960
+	MINIMUM DEPTH, sediment/rock: 919.90 m * MAXIMUM DEPTH, sediment/rock: 925.20 m
+Event(s):	318-U1356A * LATITUDE: -63.310230 * LONGITUDE: 135.998960 * ELEVATION: -4003.0 m * RECOVERY: 350.14 m * CAMPAIGN: Exp318 (Wilkes Land) * BASIS: Joides Resolution (URI: https://www-odp.tamu.edu:443/resolutn.html) * METHOD/DEVICE: Drilling/drill rig (DRILL) * COMMENT: 106 cores; 1006.4 m cored; 35 % recovered; 0 m drilled; 1006.4 m penetrated
+Comment:	Analytical precision = 2% for elements heavier than Rb; 4% for elements lighter than Rb.
+Parameter(s):	Sample code/label (Sample label) * PI: Huck, Claire E (c.e.huck@soton.ac.uk) * METHOD/DEVICE: DSDP/ODP/IODP sample designation (URI: hdl:10013/epic.27914.d001) * COMMENT: /1 denotes uncleaned sample subject to cleaning with only MQ water and methanol, /2 denotes cleaned sample subject to full oxidative-reductive cleaning protocol
+	DEPTH, sediment/rock [m] (Depth sed) * GEOCODE * PI: Huck, Claire E (c.e.huck@soton.ac.uk) * COMMENT: mbsf
+	Iron [mg/kg] (Fe) * PI: Huck, Claire E (c.e.huck@soton.ac.uk) * COMMENT: wt %
+	Manganese [mg/kg] (Mn) * PI: Huck, Claire E (c.e.huck@soton.ac.uk) * COMMENT: wt %
+	Aluminium [mg/kg] (Al) * PI: Huck, Claire E (c.e.huck@soton.ac.uk) * COMMENT: wt %
+	Calcium [mg/kg] (Ca) * PI: Huck, Claire E (c.e.huck@soton.ac.uk) * COMMENT: wt %
+	Sodium [mg/kg] (Na) * PI: Huck, Claire E (c.e.huck@soton.ac.uk) * COMMENT: wt %
+	Magnesium [mg/kg] (Mg) * PI: Huck, Claire E (c.e.huck@soton.ac.uk) * COMMENT: wt %
+	Silicon [mg/kg] (Si) * PI: Huck, Claire E (c.e.huck@soton.ac.uk) * COMMENT: wt %
+	Potassium [mg/kg] (K) * PI: Huck, Claire E (c.e.huck@soton.ac.uk) * COMMENT: wt %
+	Titanium [mg/kg] (Ti) * PI: Huck, Claire E (c.e.huck@soton.ac.uk) * COMMENT: wt %
+	Lithium [mg/kg] (Li) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Rubidium [mg/kg] (Rb) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Beryllium [mg/kg] (Be) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Strontium [mg/kg] (Sr) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Barium [mg/kg] (Ba) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Scandium [mg/kg] (Sc) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Vanadium [mg/kg] (V) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Chromium [mg/kg] (Cr) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Cobalt [mg/kg] (Co) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Nickel [mg/kg] (Ni) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Copper [mg/kg] (Cu) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Zinc [mg/kg] (Zn) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Gallium [mg/kg] (Ga) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Yttrium [mg/kg] (Y) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Niobium [mg/kg] (Nb) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Tantalum [mg/kg] (Ta) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Zirconium [mg/kg] (Zr) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Molybdenum [mg/kg] (Mo) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Uranium [mg/kg] (U) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Thorium [mg/kg] (Th) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Color description (Color descr) * PI: Huck, Claire E (c.e.huck@soton.ac.uk) * COMMENT: sediment, R = red, G = green
+License:	Creative Commons Attribution 3.0 Unported (CC-BY-3.0) (URI: https://creativecommons.org/licenses/by/3.0/)
+Size:	589 data points
+*/
+Sample label	Depth sed [m]	Fe [mg/kg]	Mn [mg/kg]	Al [mg/kg]	Ca [mg/kg]	Na [mg/kg]	Mg [mg/kg]	Si [mg/kg]	K [mg/kg]	Ti [mg/kg]	Li [mg/kg]	Rb [mg/kg]	Be [mg/kg]	Sr [mg/kg]	Ba [mg/kg]	Sc [mg/kg]	V [mg/kg]	Cr [mg/kg]	Co [mg/kg]	Ni [mg/kg]	Cu [mg/kg]	Zn [mg/kg]	Ga [mg/kg]	Y [mg/kg]	Nb [mg/kg]	Ta [mg/kg]	Zr [mg/kg]	Mo [mg/kg]	U [mg/kg]	Th [mg/kg]	Color descr
+318-U1356A-98R-1,8-11/1	919.90	0.69	0.04	0.07	45.6	0.93	0.20	0.10	0.07	0.010	7	1.2	12	1776	1940	94	19	10	1.0	8	254	235	94	2270	4.6	2.3	62	1.8	25	266	G
+318-U1356A-98R-1,8-11/2	919.90	0.64	0.03	0.02	34.7	0.71	0.08	0.04	0.06	0.007	5	0.7	6	1450	1262	34	8	17	0.6	33	6	151	60	689	3.0	1.8	20	1.5	7	43	G
+318-U1356A-98R-1,41-44	920.24	0.94	0.04	0.09	48.6	0.96	0.13	0.19	0.08	0.016	11	1.1	10	1739	1934	48	14	4	1.5	7	47	471	91	1003	5.9	2.9	51	1.6	29	259	G
+318-U1356A-98R-1,80-84	920.64	0.86	0.04	0.18	49.0	1.00	0.14	0.45	0.07	0.010	8	1.7	13	2132	2206	61	17	11	0.9	7	32	375	102	1172	2.4	1.3	22	1.0	3	254	R
+318-U1356A-98R-2,0-3	920.96	0.88	0.04	0.28	46.0	0.92	0.17	0.97	0.06	0.013	11	2.3	16	2062	2335	114	19	20	1.2	14	89	309	110	1793	3.1	1.3	48	1.1	16	192	G
+318-U1356A-98R-2,58-61/1	921.55	0.74	0.04	0.16	44.8	0.92	0.13	0.43	0.09	0.010	8	2.0	15	1901	1866	98	16	9	4.4	19	36	304	90	1627	2.4	1.2	53	1.1	47	272	G
+318-U1356A-98R-2,58-61/2	921.55	0.47	0.03	0.02	35.4	0.71	0.07	0.02	0.03	0.008	4	0.3	13	1366	1437	53	7	3	0.6	5	5	219	68	984	11.8	4.0	31	0.6	10	104	G
+318-U1356A-98R-2,120-123	922.17	0.71	0.04	0.07	49.8	1.01	0.13	0.20	0.07	0.012	8	1.1	19	2114	2422	76	11	12	0.6	4	24	389	113	1127	1.3	1.5	42	0.7	7	128	R
+318-U1356A-98R-3,40-43	922.66	0.65	0.04	0.05	44.2	0.81	0.10	0.12	0.04	0.009	5	0.5	19	1770	2042	97	10	13	0.5	5	92	243	93	1324	1.0	0.8	27	0.7	9	229	R
+318-U1356A-98R-3,100-103/1	923.24	0.68	0.04	0.06	37.6	0.75	0.10	0.14	0.07	0.008	5	0.9	19	1619	1983	81	9	11	0.4	5	14	227	90	1065	1.5	0.7	28	0.7	6	116	R
+318-U1356A-98R-3,100-103/2	923.24	0.45	0.03	0.01	32.7	0.73	0.07	0.02	0.05	0.006	4	0.5	14	1192	1505	68	6	1	0.4	4	5	183	68	1035	0.8	0.8	24	0.5	5	88	R
+318-U1356A-98R-3,120-123	923.44	0.97	0.05	0.35	44.4	0.85	0.17	1.46	0.05	0.013	7	2.7	22	1944	2319	90	16	15	0.7	6	12	175	104	1325	1.4	0.8	48	1.0	7	173	R
+318-U1356A-98R-4,25-29	923.98	0.71	0.04	0.04	48.8	0.99	0.12	0.04	0.07	0.009	3	0.5	17	2030	1795	73	8	29	0.4	13	14	328	83	925	2.7	2.8	14	1.2	6	106	R
+318-U1356A-98R-4,42-46	924.18	0.65	0.03	0.07	38.3	0.78	0.09	0.07	0.08	0.008	2	0.9	14	1630	1454	67	11	5	0.4	6	26	450	68	878	1.3	1.1	20	0.4	16	187	G
+318-U1356A-98R-4,60-63	924.38	0.83	0.04	0.07	32.1	0.66	0.08	0.07	0.12	0.007	2	0.4	14	1315	1497	51	13	13	0.4	6	14	183	71	652	1.3	4.0	14	0.7	12	100	G
+318-U1356A-98R-5,0-3	924.40	0.77	0.03	8.74	24.3	0.81	0.09	0.29	0.27	0.023	2	3.1	11	948	1297	53	18	58	0.7	240	495	249	71	638	2.7	2.5	25	1.6	33	228	G
+318-U1356A-98R-5,60-63	925.00	0.54	0.03	0.01	33.3	0.61	0.07	0.03	0.06	0.009	3	0.5	13	1371	1603	99	7	5	0.2	4	15	222	74	1203	11.5	7.3	30	1.0	8	34	R
+318-U1356A-98R-5,80-83/1	925.20	0.52	0.02	0.02	23.3	0.46	0.07	0.05	0.07	0.005	2	0.2	9	884	1104	42	5	10	0.3	2	9	243	52	451	0.7	0.3	17	1.0	5	43	R
+318-U1356A-98R-5,80-83/2	925.20	0.37	0.01	0.01	14.9	0.31	0.03	0.02	0.04	0.004	1	0.1	5	578	627	10	3	6	0.1	1	2	141	29	114	31.4	3.7	12	0.5	2	1	R

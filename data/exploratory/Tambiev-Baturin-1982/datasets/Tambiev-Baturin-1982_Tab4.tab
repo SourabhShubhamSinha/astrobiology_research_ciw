@@ -1,0 +1,40 @@
+/* DATA DESCRIPTION:
+Citation:	Tambiev, Sergey B; Baturin, Gleb N (1982): (Table 4) Contents of P2O5 and REE in phosphorites from Pacific seamounts [dataset]. P.P. Shirshov Institute of Oceanology, Russian Academy of Sciences, Moscow, PANGAEA, https://doi.org/10.1594/PANGAEA.778164, 
+	In supplement to: Tambiev, SB; Baturin, GN (1982): Rare earth elements in the process of ocean phosphorite formation. Litologiya i Poleznyye Iskopaemyye (Lithology and Mineral Resources), 17(2), 3-15
+Abstract:	Changes in concentration levels and speciation of heavy metals during sedimentation on example of a typical semi-closed bay, where bottom sediments have formed due to river run-off, are under consideration. It is shown that due to desorption of mobile manganese, zinc and copper entered the bay with river suspended matter, their total contents in bottom sediments decrease and percentages of lithogenic forms increase. Contents and speciation of iron in bottom sediments are determined by its participation in coagulation of river colloids in the mixing zone and by mechanical differentiation of sedimentary material.
+Project(s):	Archive of Ocean Data (ARCOD)
+Coverage:	MEDIAN LATITUDE: 22.498750 * MEDIAN LONGITUDE: -177.074575 * SOUTH-BOUND LATITUDE: 18.500000 * WEST-BOUND LONGITUDE: 172.816700 * NORTH-BOUND LATITUDE: 32.283300 * EAST-BOUND LONGITUDE: -170.548300
+	DATE/TIME START: 1970-06-01T00:00:00 * DATE/TIME END: 1970-08-18T00:00:00
+	MINIMUM ELEVATION: -2280.0 m * MAXIMUM ELEVATION: -375.0 m
+Event(s):	VITYAZ6002-12-DR * LATITUDE: 20.695000 * LONGITUDE: -170.548300 * ELEVATION START: -1930.0 m * ELEVATION END: -1940.0 m * LOCATION: Central Pacific Seamounts, Pacific Ocean * CAMPAIGN: Vityaz-43 * BASIS: Vityaz (ex-Mars) * METHOD/DEVICE: Dredge (DRG) * COMMENT: polygon buoy position
+	VITYAZ6261-1 * LATITUDE: 32.283300 * LONGITUDE: 172.816700 * DATE/TIME: 1970-06-01T00:00:00 * ELEVATION START: -478.0 m * ELEVATION END: -375.0 m * LOCATION: Central Pacific * CAMPAIGN: Vityaz-48 * BASIS: Vityaz (ex-Mars) * METHOD/DEVICE: Dredge (DRG)
+	VITYAZ6348-1 * LATITUDE: 18.516700 * LONGITUDE: -175.100000 * DATE/TIME: 1970-08-18T00:00:00 * ELEVATION START: -1040.0 m * ELEVATION END: -1065.0 m * LOCATION: Central Pacific * CAMPAIGN: Vityaz-48 * BASIS: Vityaz (ex-Mars) * METHOD/DEVICE: Dredge (DRG)
+	VITYAZ6349 * LATITUDE: 18.500000 * LONGITUDE: -175.466700 * ELEVATION: -2280.0 m * LOCATION: Pacific Ocean * CAMPAIGN: VITYAZ * BASIS: Vityaz (ex-Mars) * METHOD/DEVICE: Grab (GRAB)
+Comment:	0 = not found.
+Parameter(s):	Event label (Event)
+	Latitude of event (Latitude)
+	Longitude of event (Longitude)
+	Elevation of event [m] (Elevation)
+	Elevation of event 2 [m] (Elevation 2)
+	Sample type (Samp type) * PI: Tambiev, Sergey B
+	Epoch (Epoch) * PI: Tambiev, Sergey B
+	Phosphorus pentoxide [%] (P2O5) * PI: Tambiev, Sergey B * METHOD/DEVICE: Wet chemistry
+	Lanthanum [mg/kg] (La) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Cerium [mg/kg] (Ce) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Neodymium [mg/kg] (Nd) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Samarium [mg/kg] (Sm) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Europium [mg/kg] (Eu) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Gadolinium [mg/kg] (Gd) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Terbium [mg/kg] (Tb) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Thulium [mg/kg] (Tm) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Ytterbium [mg/kg] (Yb) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Lutetium [mg/kg] (Lu) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+License:	Creative Commons Attribution 3.0 Unported (CC-BY-3.0) (URI: https://creativecommons.org/licenses/by/3.0/)
+Size:	61 data points
+*/
+Event	Latitude	Longitude	Elevation [m]	Elevation 2 [m]	Samp type	Epoch	P2O5 [%]	La [mg/kg]	Ce [mg/kg]	Nd [mg/kg]	Sm [mg/kg]	Eu [mg/kg]	Gd [mg/kg]	Tb [mg/kg]	Tm [mg/kg]	Yb [mg/kg]	Lu [mg/kg]
+VITYAZ6261-1	32.283	172.817	-478	-375	massive phosphatized limestone	Neogene-Quaternary	23.4	11.9	13.8		2.5	0.56	1.7	0.26	0.35	1.2	0.17
+VITYAZ6348-1	18.517	-175.100	-1040	-1065	same	Paleogene	28.8	214.0	5.7		25.0	5.80	32.0	2.20	2.20	20.0	4.80
+VITYAZ6349	18.500	-175.467	-2280		loose phosphatized limestone	Cretaceous	30.0	149.0		86	14.0	4.40	15.6	1.60	2.10	14.0	3.00
+VITYAZ6349	18.500	-175.467	-2280		massive phosphorite pebbles	Cretaceous	23.3	206.0	48.8		22.0	6.60	28.6	2.70	2.70	22.0	3.50
+VITYAZ6002-12-DR	20.695	-170.548	-1930	-1940	block of massive phosphorite	Cretaceous	30.9	283.0	89.0	226	52.0	19.00	68.0	7.80	8.80	51.0	8.80

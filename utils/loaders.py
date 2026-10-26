@@ -669,9 +669,18 @@ def build_all(raw_dir, out_dir, verbose=True) -> dict:
     osm = results["osullivan_apatite"].meta
     osm["also_in_georoc"] = osm["study"].isin(OSULLIVAN_STUDIES_ALSO_IN_GEOROC)
 
-    results["apatite_all"] = combine([results["georoc_apatite"], results["osullivan_apatite"]], "apatite_all")
+    # Biogenic / low-temperature apatite (skipped quietly if a file is missing)
+    from .loaders_bio import load_all_bio
+    bio, bio_reports = load_all_bio(raw_dir, verbose=verbose)
+    for k, ds in bio.items():
+        results[f"bio_{k}"], reports[f"bio_{k}"] = ds, bio_reports[k]
+
+    results["apatite_all"] = combine([results["georoc_apatite"], results["osullivan_apatite"]]
+                                     + list(bio.values()), "apatite_all")
     am = results["apatite_all"].meta
     am["also_in_georoc"] = am["also_in_georoc"].astype("boolean").fillna(False).astype(bool)
+    if "rock_class" in am:
+        am["rock_class"] = am["rock_class"].astype("string")
     results["pyrite_all"] = combine([results["ml2020_pyrite"], results["gregory_pyrite"],
                                      results["falkenberg_pyrite"]], "pyrite_all")
     for name, ds in results.items():

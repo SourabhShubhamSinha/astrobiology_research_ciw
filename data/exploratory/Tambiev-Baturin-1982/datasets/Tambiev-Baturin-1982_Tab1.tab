@@ -1,0 +1,51 @@
+/* DATA DESCRIPTION:
+Citation:	Tambiev, Sergey B; Baturin, Gleb N (1982): (Table 1) Contents of P2O5, organic carbon, and REE in recent diatomaceous ooze and phosphorites from the Namibian shelf [dataset]. P.P. Shirshov Institute of Oceanology, Russian Academy of Sciences, Moscow, PANGAEA, https://doi.org/10.1594/PANGAEA.778161, 
+	In supplement to: Tambiev, SB; Baturin, GN (1982): Rare earth elements in the process of ocean phosphorite formation. Litologiya i Poleznyye Iskopaemyye (Lithology and Mineral Resources), 17(2), 3-15
+Abstract:	Changes in concentration levels and speciation of heavy metals during sedimentation on example of a typical semi-closed bay, where bottom sediments have formed due to river run-off, are under consideration. It is shown that due to desorption of mobile manganese, zinc and copper entered the bay with river suspended matter, their total contents in bottom sediments decrease and percentages of lithogenic forms increase. Contents and speciation of iron in bottom sediments are determined by its participation in coagulation of river colloids in the mixing zone and by mechanical differentiation of sedimentary material.
+Project(s):	Archive of Ocean Data (ARCOD)
+Coverage:	MEDIAN LATITUDE: -22.400000 * MEDIAN LONGITUDE: 14.108333 * SOUTH-BOUND LATITUDE: -22.666667 * WEST-BOUND LONGITUDE: 13.966667 * NORTH-BOUND LATITUDE: -22.133333 * EAST-BOUND LONGITUDE: 14.250000
+	MINIMUM ELEVATION: -87.0 m * MAXIMUM ELEVATION: -85.0 m
+Event(s):	DM24-2046 * LATITUDE: -22.666667 * LONGITUDE: 14.250000 * ELEVATION: -87.0 m * LOCATION: Namibian shelf * METHOD/DEVICE: Grab (GRAB)
+	DM24-2048 * LATITUDE: -22.133333 * LONGITUDE: 13.966667 * ELEVATION: -85.0 m * LOCATION: Namibian shelf * METHOD/DEVICE: Grab (GRAB)
+Comment:	0 = not found.
+Parameter(s):	Event label (Event)
+	Latitude of event (Latitude)
+	Longitude of event (Longitude)
+	Elevation of event [m] (Elevation)
+	Sample type (Samp type) * PI: Tambiev, Sergey B
+	Phosphorus pentoxide [%] (P2O5) * PI: Tambiev, Sergey B * METHOD/DEVICE: Wet chemistry
+	Carbon, organic, total [%] (TOC) * PI: Tambiev, Sergey B * METHOD/DEVICE: Wet chemistry
+	Uranium [mg/kg] (U) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Cerium [mg/kg] (Ce) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Samarium [mg/kg] (Sm) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Europium [mg/kg] (Eu) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Terbium [mg/kg] (Tb) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Ytterbium [mg/kg] (Yb) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Lutetium [mg/kg] (Lu) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+License:	Creative Commons Attribution 3.0 Unported (CC-BY-3.0) (URI: https://creativecommons.org/licenses/by/3.0/)
+Size:	206 data points
+*/
+Event	Latitude	Longitude	Elevation [m]	Samp type	P2O5 [%]	TOC [%]	U [mg/kg]	Ce [mg/kg]	Sm [mg/kg]	Eu [mg/kg]	Tb [mg/kg]	Yb [mg/kg]	Lu [mg/kg]
+DM24-2046	-22.667	14.250	-87	diatomaceous ooze	1.33	5.31	10.50	23.2	1.40	0.270	0.130	0.48	0.056
+DM24-2046	-22.667	14.250	-87	clots of low phosphatized mud	3.70	3.97	6.20	9.8	0.00	0.030	0.030	0.57	0.160
+DM24-2046	-22.667	14.250	-87	soft nodule	19.00	2.25	2.10	0.0	0.65	0.048	0.000	0.32	0.000
+DM24-2046	-22.667	14.250	-87	friable nodule	29.60	1.28	2.10	0.0	0.00	0.023	0.000	0.00	0.000
+DM24-2046	-22.667	14.250	-87	consolidated granular nodule				0.0			0.000	0.00	
+DM24-2046	-22.667	14.250	-87	consolidated massive nodule	29.20		2.00	0.0	0.00	0.017	0.053	0.18	0.033
+DM24-2046	-22.667	14.250	-87	massive granular nodule	29.50	0.97	0.77	4.1	0.00	0.030	0.030	0.00	0.047
+DM24-2046	-22.667	14.250	-87	massive nodule	28.70	0.98	2.00	4.1	0.00	0.034	0.027	0.18	0.044
+DM24-2046	-22.667	14.250	-87	friable coprolite	28.80	1.15	1.40	0.0	0.26	0.010	0.051	0.15	0.053
+DM24-2046	-22.667	14.250	-87	consilidated coprolite	29.90	1.18	1.10	0.0	0.10	0.000	0.038	0.00	0.054
+DM24-2046	-22.667	14.250	-87	massive grey coprolite	31.40	0.88	1.70	0.0	0.00		0.000	0.37	0.000
+DM24-2046	-22.667	14.250	-87	massive brown coprolite	31.10	1.08	1.00	0.0	0.34	0.000	0.000	0.00	0.650
+DM24-2048	-22.133	13.967	-85	diatomaceous ooze	0.02	5.54	8.00	16.0		0.210	0.100		
+DM24-2048	-22.133	13.967	-85	clots of low phosphatized mud	4.16	4.02	3.30	10.6		0.170	0.082	0.80	0.059
+DM24-2048	-22.133	13.967	-85	soft nodule	23.30		3.00	15.5		0.039	0.036	0.23	0.038
+DM24-2048	-22.133	13.967	-85	friable nodule	24.20	1.18	2.60	9.8		0.013	0.000	0.22	0.087
+DM24-2048	-22.133	13.967	-85	consolidated granular nodule	26.90	1.21	2.30	12.2		0.000	0.000	0.49	0.059
+DM24-2048	-22.133	13.967	-85	consolidated massive nodule	29.00	1.03	1.10	3.3		0.000	0.000	0.00	0.000
+DM24-2048	-22.133	13.967	-85	massive granular nodule	32.30	1.02	1.90	0.0		0.015	0.082	0.21	0.039
+DM24-2048	-22.133	13.967	-85	massive nodule	33.90	0.87	2.20	5.5		0.017	0.091	0.25	0.039
+DM24-2048	-22.133	13.967	-85	massive grey coprolite	29.80	0.79	1.50	4.1		0.021	0.053	0.00	0.040
+DM24-2048	-22.133	13.967	-85	massive brown coprolite	29.50	0.71	1.10	5.7		0.035	0.026	0.32	0.037
+DM24-2048	-22.133	13.967	-85	same, insoluble residue			162.00	269.0		2.600	2.210	14.00	1.900

@@ -92,6 +92,9 @@ ORIGIN_BY_CLASS = {
     "phosphorite":                 ("ambiguous_authigenic",           "low_T"),
     "bif_chert":                   ("ambiguous_authigenic",           "low_T"),
     "fossil_bioapatite":           ("biogenic_skeletal_diagenetic",   "low_T"),
+    "modern_bioapatite":           ("biogenic_skeletal",              "low_T"),
+    "recent_authigenic":           ("biologically_induced_authigenic", "low_T"),
+    "seamount_phosphorite":        ("ambiguous_authigenic",           "low_T"),
     "unknown":                     ("unknown",                        "unknown"),
 }
 
@@ -116,18 +119,24 @@ def add_labels(meta: pd.DataFrame) -> pd.DataFrame:
     """Return a labels table (same index as meta)."""
     is_os = meta["dataset"].eq("OSullivan2019")
     codes = meta["context"].where(is_os)
-    rc = [rock_class(n, c if isinstance(c, str) else None)
-          for n, c in zip(meta["lithology"], codes)]
+    rc = pd.Series([rock_class(n, c if isinstance(c, str) else None)
+                    for n, c in zip(meta["lithology"], codes)], index=meta.index)
+    if "rock_class" in meta:                     # datasets that state their class explicitly
+        given = meta["rock_class"].astype("string")
+        rc = given.where(given.notna() & given.ne(""), rc)
     lab = pd.DataFrame(index=meta.index)
     lab["dataset"] = meta["dataset"]
     lab["study"] = meta["study"]
     lab["lithology"] = meta["lithology"]
-    lab["rock_class"] = rc
-    lab["origin_class"] = lab["rock_class"].map(lambda r: ORIGIN_BY_CLASS[r][0])
-    lab["temp_regime"] = lab["rock_class"].map(lambda r: ORIGIN_BY_CLASS[r][1])
+    lab["rock_class"] = rc.astype(str)
+    lab["origin_class"] = lab["rock_class"].map(lambda r: ORIGIN_BY_CLASS.get(r, ("unknown", "unknown"))[0])
+    lab["temp_regime"] = lab["rock_class"].map(lambda r: ORIGIN_BY_CLASS.get(r, ("unknown", "unknown"))[1])
     # GEOROC: tectonic setting; O'Sullivan: lithology code (ALK, IM, S, UM, LM, HM, AUT)
     lab["setting"] = meta["context"]
     lab["data_type"] = meta["data_type"]
+    # same locality AND rock class: the unit within which different studies
+    # should agree if there were no lab / method offsets
+    lab["site"] = meta["location"].astype("string").str.upper().fillna("?") + " || " + lab["rock_class"]
     lab["also_in_georoc"] = _as_bool(meta["also_in_georoc"]) if "also_in_georoc" in meta else False
     return lab
 
@@ -145,12 +154,20 @@ DEFAULT_APATITE_ELEMENTS = REE_Y + ["Sr", "Th", "U", "Mn"]
 FEATURES_FULL = DEFAULT_APATITE_ELEMENTS
 FEATURES_SHARED = ["La", "Ce", "Pr", "Nd", "Sm", "Eu", "Gd", "Dy", "Ho", "Y", "Er", "Yb", "Lu"]
 
+# Values entered in GEOROC's ppm columns that are really wt% (found by study-effect
+# checks: Ce/La ~ 0.0003 and P = 18 "ppm" are impossible; x 1e4 restores
+# Ce/La ~ 2.6, Nd/Pr ~ 4.4 and P2O5 ~ 42 wt%, consistent with the rest of the study).
+KNOWN_UNIT_ERRORS = {
+    "[25837] WANG CHANGHONG (2022)": {"Ce": 1e4, "Nd": 1e4, "Sr": 1e4, "P": 1e4},
+}
+
 META_COLS = ["sample_id", "location", "lat", "lon", "age_ma", "mineral", "spot", "rim_core",
              "primary_secondary", "alteration"]
 
 
 def apatite_table(processed_dir, elements=None, require=None, level="spot",
-                  spots_only=True, drop_dup_studies=True, drop_unknown=False):
+                  spots_only=True, drop_dup_studies=True, drop_unknown=False,
+                  datasets=None, fix_known_errors=True):
     """Return (X, labels, meta) for apatite from GEOROC + O'Sullivan.
 
     elements   : which elements go in X (default: REE + Y + Sr, Th, U, Mn)
@@ -158,9 +175,14 @@ def apatite_table(processed_dir, elements=None, require=None, level="spot",
                  (default: the 14 REE + Y). Use [] to keep everything.
     level      : "spot" (each analysis) or "sample" (median of spots per
                  dataset + study + sample_id; adds n_spots to meta)
-    spots_only : drop O'Sullivan rows that are averages / means / percentiles
+    spots_only : drop compiled summary rows (O'Sullivan averages, means,
+                 medians, percentiles, mineral concentrates). Whole-specimen
+                 analyses (dissolved teeth, bulk phosphorites) are kept;
+                 filter labels.data_type if you want spots only.
     drop_dup_studies : drop O'Sullivan studies that also exist in GEOROC
     drop_unknown     : drop rows whose rock_class is "unknown" (NOT GIVEN)
+    datasets         : e.g. ["GEOROC_apatite"] to use GEOROC only (default: all)
+    fix_known_errors : apply KNOWN_UNIT_ERRORS (wt% entered as ppm)
     """
     elements = list(elements or DEFAULT_APATITE_ELEMENTS)
     require = list(REE_Y if require is None else require)
@@ -170,10 +192,18 @@ def apatite_table(processed_dir, elements=None, require=None, level="spot",
         meta["also_in_georoc"] = False
     X = ds.wide(variables=sorted(set(elements) | set(require)))
     X = X.reindex(columns=sorted(set(elements) | set(require)))
+    if fix_known_errors:
+        for study, fixes in KNOWN_UNIT_ERRORS.items():
+            rows = meta["study"].eq(study)
+            for el, f in fixes.items():
+                if el in X.columns:
+                    X.loc[rows, el] = X.loc[rows, el] * f
 
     keep = pd.Series(True, index=meta.index)
+    if datasets is not None:
+        keep &= meta["dataset"].isin(list(datasets))
     if spots_only:
-        keep &= meta["data_type"].fillna("spot").isin(["spot"])
+        keep &= ~meta["data_type"].fillna("spot").isin(["average", "mean", "median", "percentile", "concentrate"])
     if drop_dup_studies:
         keep &= ~_as_bool(meta["also_in_georoc"])
     if require:

@@ -1,0 +1,37 @@
+/* DATA DESCRIPTION:
+Citation:	Tambiev, Sergey B; Baturin, Gleb N (1982): (Table 2) Contents of P2O5 and REE in Late Quaternary phosphorite nodules from Chile and Peru shelves [dataset]. P.P. Shirshov Institute of Oceanology, Russian Academy of Sciences, Moscow, PANGAEA, https://doi.org/10.1594/PANGAEA.778162, 
+	In supplement to: Tambiev, SB; Baturin, GN (1982): Rare earth elements in the process of ocean phosphorite formation. Litologiya i Poleznyye Iskopaemyye (Lithology and Mineral Resources), 17(2), 3-15
+Abstract:	Changes in concentration levels and speciation of heavy metals during sedimentation on example of a typical semi-closed bay, where bottom sediments have formed due to river run-off, are under consideration. It is shown that due to desorption of mobile manganese, zinc and copper entered the bay with river suspended matter, their total contents in bottom sediments decrease and percentages of lithogenic forms increase. Contents and speciation of iron in bottom sediments are determined by its participation in coagulation of river colloids in the mixing zone and by mechanical differentiation of sedimentary material.
+Project(s):	Archive of Ocean Data (ARCOD)
+Coverage:	MEDIAN LATITUDE: -13.388867 * MEDIAN LONGITUDE: -76.472233 * SOUTH-BOUND LATITUDE: -21.133300 * WEST-BOUND LONGITUDE: -79.650000 * NORTH-BOUND LATITUDE: -9.233300 * EAST-BOUND LONGITUDE: -70.366700
+	MINIMUM ELEVATION: -560.0 m * MAXIMUM ELEVATION: -150.0 m
+Event(s):	AK4-250 * LATITUDE: -21.133300 * LONGITUDE: -70.366700 * ELEVATION: -150.0 m * LOCATION: Chile shelf * CAMPAIGN: AKU4 * BASIS: Akademik Kurchatov * METHOD/DEVICE: Grab (GRAB)
+	DM8-546 * LATITUDE: -9.800000 * LONGITUDE: -79.400000 * ELEVATION: -560.0 m * LOCATION: Peru shelf * CAMPAIGN: DM8 * BASIS: Dmitry Mendeleev (URI: https://ocean.ru/index.php/novosti-left/ob-yavleniya/item/1238-polveka-so-dnya-nachala-pervogo-rejsa-nis-dmitrij-mendeleev) * METHOD/DEVICE: Grab (GRAB)
+	DM8-553 * LATITUDE: -9.233300 * LONGITUDE: -79.650000 * ELEVATION: -300.0 m * LOCATION: Peru shelf * CAMPAIGN: DM8 * BASIS: Dmitry Mendeleev (URI: https://ocean.ru/index.php/novosti-left/ob-yavleniya/item/1238-polveka-so-dnya-nachala-pervogo-rejsa-nis-dmitrij-mendeleev) * METHOD/DEVICE: Grab (GRAB)
+Comment:	0 = not found.
+Parameter(s):	Event label (Event)
+	Latitude of event (Latitude)
+	Longitude of event (Longitude)
+	Elevation of event [m] (Elevation)
+	Area/locality (Area) * PI: Tambiev, Sergey B
+	Sample type (Samp type) * PI: Tambiev, Sergey B
+	Phosphorus pentoxide [%] (P2O5) * PI: Tambiev, Sergey B * METHOD/DEVICE: Wet chemistry
+	Lanthanum [mg/kg] (La) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Cerium [mg/kg] (Ce) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Samarium [mg/kg] (Sm) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Europium [mg/kg] (Eu) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Terbium [mg/kg] (Tb) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Thulium [mg/kg] (Tm) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Ytterbium [mg/kg] (Yb) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+	Lutetium [mg/kg] (Lu) * PI: Tambiev, Sergey B * METHOD/DEVICE: Instrumental neutron activation analysis (INAA)
+License:	Creative Commons Attribution 3.0 Unported (CC-BY-3.0) (URI: https://creativecommons.org/licenses/by/3.0/)
+Size:	76 data points
+*/
+Event	Latitude	Longitude	Elevation [m]	Area	Samp type	P2O5 [%]	La [mg/kg]	Ce [mg/kg]	Sm [mg/kg]	Eu [mg/kg]	Tb [mg/kg]	Tm [mg/kg]	Yb [mg/kg]	Lu [mg/kg]
+AK4-250	-21.133	-70.367	-150	Chile shelf	friable nodules	16.9	12.8	27.7	2.4	0.66	0.21	0.053	0.42	0.16
+AK4-250	-21.133	-70.367	-150	Chile shelf	consolidated nodules	21.7	11.1	22.0	0.0	0.52	0.23	0.084	0.83	0.18
+AK4-250	-21.133	-70.367	-150	Chile shelf	massive nodules	28.4	9.4	19.5	1.6	0.42	0.18	0.170	0.78	0.21
+AK4-250	-21.133	-70.367	-150	Chile shelf	insoluble residue of friable and consolidated nodules		21.3	39.1	3.4	0.95	0.33	0.350	1.70	0.40
+DM8-546	-9.800	-79.400	-560	Peru shelf	friable nodules	11.1	14.5	21.2	2.7	0.48	0.22	0.140	0.66	0.14
+DM8-553	-9.233	-79.650	-300	Peru shelf	consolidated nodules	18.0	13.6	29.3	1.8	0.49	0.20	0.370	0.61	0.19
+DM8-553	-9.233	-79.650	-300	Peru shelf	massive nodules	19.4	14.5	21.2	2.3	0.74	0.29	0.190	1.30	0.24

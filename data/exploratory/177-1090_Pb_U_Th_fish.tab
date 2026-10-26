@@ -1,0 +1,36 @@
+/* DATA DESCRIPTION:
+Citation:	Basak, Chandranath; Martin, Ellen E; Kamenov, George D (2011): (Table 7) Pb, U, and Th concentrations in fossil and modern fish teeth [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.780147, 
+	In supplement to: Basak, C et al. (2011): Seawater Pb isotopes extracted from Cenozoic marine sediments. Chemical Geology, 286(3-4), 94-108, https://doi.org/10.1016/j.chemgeo.2011.04.007
+Project(s):	Ocean Drilling Program (ODP) (URI: https://www-odp.tamu.edu:443/)
+Coverage:	LATITUDE: -42.913617 * LONGITUDE: 8.899817
+	DATE/TIME START: 1997-12-25T00:00:00 * DATE/TIME END: 1997-12-25T00:00:00
+	MINIMUM DEPTH, sediment/rock: 104.91 m * MAXIMUM DEPTH, sediment/rock: 352.32 m
+Event(s):	177-1090 * LATITUDE: -42.913617 * LONGITUDE: 8.899817 * DATE/TIME: 1997-12-25T00:00:00 * ELEVATION: -3701.6 m * PENETRATION: 936.4 m * RECOVERY: 874.9 m * LOCATION: South Atlantic Ocean * CAMPAIGN: Leg177 * BASIS: Joides Resolution (URI: https://www-odp.tamu.edu:443/resolutn.html) * METHOD/DEVICE: Composite Core (COMPCORE) * COMMENT: 101 cores; 936.4 m cored; 0 m drilled; 93.4% recovery
+Comment:	Sediment depth is given in mcd. Age model after Channell et al. (2003, datasets: doi:10.1594/PANGAEA.717737).Modern fish teeth = 0 ka, without geographical position.
+Parameter(s):	Event label (Event)
+	Sample code/label (Sample label) * PI: Basak, Chandranath (https://orcid.org/0000-0002-9410-0074, cbasak@udel.edu) * METHOD/DEVICE: DSDP/ODP/IODP sample designation (URI: hdl:10013/epic.27914.d001)
+	AGE [ka BP] (Age) * GEOCODE
+	DEPTH, sediment/rock [m] (Depth sed) * GEOCODE
+	Lead [mg/kg] (Pb) * PI: Basak, Chandranath (https://orcid.org/0000-0002-9410-0074, cbasak@udel.edu) * METHOD/DEVICE: Inductively coupled plasma - mass spectrometry (ICP-MS)
+	Uranium [mg/kg] (U) * PI: Basak, Chandranath (https://orcid.org/0000-0002-9410-0074, cbasak@udel.edu) * METHOD/DEVICE: Inductively coupled plasma - mass spectrometry (ICP-MS)
+	Thorium [mg/kg] (Th) * PI: Basak, Chandranath (https://orcid.org/0000-0002-9410-0074, cbasak@udel.edu) * METHOD/DEVICE: Inductively coupled plasma - mass spectrometry (ICP-MS)
+License:	Creative Commons Attribution 3.0 Unported (CC-BY-3.0) (URI: https://creativecommons.org/licenses/by/3.0/)
+Size:	64 data points
+*/
+Event	Sample label	Age [ka BP]	Depth sed [m]	Pb [mg/kg]	U [mg/kg]	Th [mg/kg]
+177-1090	177-1090D-11H-4A,38-41	20310	104.91	191.62	28.53	31.25
+177-1090	177-1090E-11H-5A,72-75	20790	110.73	161.34	28.10	25.72
+177-1090	177-1090E-12H-3A,71-74	21610	116.62	50.95	13.86	4.81
+177-1090	177-1090D-17H-3A,18-21	25060	162.96	102.74	19.33	23.06
+177-1090	177-1090D-19H-3A,90-93	26980	185.45	366.61	37.23	36.58
+177-1090	177-1090B-31X-1W,16-19	35580	293.85	17.30	4.51	7.91
+177-1090	177-1090B-37X-1W,124-126	37680	342.99	29.96	6.24	11.38
+177-1090	177-1090B-38X-2W,123-126	38710	352.32	38.14	5.38	24.62
+	13_14_Mackerel	0		0.71	0.24	0.15
+	13_14_Mackerel_Replicate	0		0.49	0.24	0.13
+	15_16_Mackerel	0		1.25	0.30	0.16
+	15_16_Mackerel_Replicate	0		2.03	0.27	0.14
+	7_8_unknown	0		2.61	0.25	0.13
+	7_8_unknown_Replicate	0		1.62	0.23	0.12
+	23_24_Halibut	0		1.48	0.26	0.13
+	23_24_Halibut_Replicate	0		0.55	0.24	0.12

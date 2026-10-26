@@ -1,0 +1,28 @@
+/* DATA DESCRIPTION:
+Citation:	Tambiev, Sergey B; Baturin, Gleb N (1982): Contents of P2O5 and REE in phosphorites from shelves and Pacific seamounts [dataset publication series]. P.P. Shirshov Institute of Oceanology, Russian Academy of Sciences, Moscow, PANGAEA, https://doi.org/10.1594/PANGAEA.778166, 
+	Supplement to: Tambiev, SB; Baturin, GN (1982): Rare earth elements in the process of ocean phosphorite formation. Litologiya i Poleznyye Iskopaemyye (Lithology and Mineral Resources), 17(2), 3-15
+Abstract:	Recent phosphorites from the Namibian shelf are characterized by low REE contents, depletion in REE compared to host sediments and sharp deficiency of lanthanum and europium. In Late Quaternary and Pre-Quaternary phosphorites from ocean shelves REE contents and patterns in general are the same as in host sediments. Phosphorites from seamounts are enriched in REE compared to shelf phosphorites and their patterns are close to one of seawater. Behavior of REE in shelf phosphorites is determined by the fact that in early stages of phosphorite formation REE are associated not primarily with phosphate, but with organic matter and terrigenous impurities. Only in the later stages of diagenesis phosphate begins to play a leading role in concentration of REE. In metasomatic phosphorites on seamounts concentration of REE depends on age and depth of these rocks, i.e. it is determined by duration and conditions of contact with sea water.
+Project(s):	Archive of Ocean Data (ARCOD)
+Coverage:	MEDIAN LATITUDE: 2.674276 * MEDIAN LONGITUDE: 164.047185 * SOUTH-BOUND LATITUDE: -22.666667 * WEST-BOUND LONGITUDE: 13.966667 * NORTH-BOUND LATITUDE: 32.283300 * EAST-BOUND LONGITUDE: -70.366700
+	DATE/TIME START: 1970-06-01T00:00:00 * DATE/TIME END: 1970-08-18T00:00:00
+Event(s):	AK4-250 * LATITUDE: -21.133300 * LONGITUDE: -70.366700 * ELEVATION: -150.0 m * LOCATION: Chile shelf * CAMPAIGN: AKU4 * BASIS: Akademik Kurchatov * METHOD/DEVICE: Grab (GRAB)
+	DM8-546 * LATITUDE: -9.800000 * LONGITUDE: -79.400000 * ELEVATION: -560.0 m * LOCATION: Peru shelf * CAMPAIGN: DM8 * BASIS: Dmitry Mendeleev (URI: https://ocean.ru/index.php/novosti-left/ob-yavleniya/item/1238-polveka-so-dnya-nachala-pervogo-rejsa-nis-dmitrij-mendeleev) * METHOD/DEVICE: Grab (GRAB)
+	DM8-553 * LATITUDE: -9.233300 * LONGITUDE: -79.650000 * ELEVATION: -300.0 m * LOCATION: Peru shelf * CAMPAIGN: DM8 * BASIS: Dmitry Mendeleev (URI: https://ocean.ru/index.php/novosti-left/ob-yavleniya/item/1238-polveka-so-dnya-nachala-pervogo-rejsa-nis-dmitrij-mendeleev) * METHOD/DEVICE: Grab (GRAB)
+	DM24-2046 * LATITUDE: -22.666667 * LONGITUDE: 14.250000 * ELEVATION: -87.0 m * LOCATION: Namibian shelf * METHOD/DEVICE: Grab (GRAB)
+	DM24-2048 * LATITUDE: -22.133333 * LONGITUDE: 13.966667 * ELEVATION: -85.0 m * LOCATION: Namibian shelf * METHOD/DEVICE: Grab (GRAB)
+	VITYAZ6002-12-DR * LATITUDE: 20.695000 * LONGITUDE: -170.548300 * ELEVATION START: -1930.0 m * ELEVATION END: -1940.0 m * LOCATION: Central Pacific Seamounts, Pacific Ocean * CAMPAIGN: Vityaz-43 * BASIS: Vityaz (ex-Mars) * METHOD/DEVICE: Dredge (DRG) * COMMENT: polygon buoy position
+	VITYAZ6261-1 * LATITUDE: 32.283300 * LONGITUDE: 172.816700 * DATE/TIME: 1970-06-01T00:00:00 * ELEVATION START: -478.0 m * ELEVATION END: -375.0 m * LOCATION: Central Pacific * CAMPAIGN: Vityaz-48 * BASIS: Vityaz (ex-Mars) * METHOD/DEVICE: Dredge (DRG)
+	VITYAZ6343-DR * LATITUDE: 20.100000 * LONGITUDE: -169.116700 * DATE/TIME: 1970-08-01T00:00:00 * ELEVATION START: -4100.0 m * ELEVATION END: -4400.0 m * LOCATION: Marcus-Necker Ridge * CAMPAIGN: Vityaz-48 * BASIS: Vityaz (ex-Mars) * METHOD/DEVICE: Dredge (DRG)
+	VITYAZ6348-1 * LATITUDE: 18.516700 * LONGITUDE: -175.100000 * DATE/TIME: 1970-08-18T00:00:00 * ELEVATION START: -1040.0 m * ELEVATION END: -1065.0 m * LOCATION: Central Pacific * CAMPAIGN: Vityaz-48 * BASIS: Vityaz (ex-Mars) * METHOD/DEVICE: Dredge (DRG)
+	VITYAZ6349 * LATITUDE: 18.500000 * LONGITUDE: -175.466700 * ELEVATION: -2280.0 m * LOCATION: Pacific Ocean * CAMPAIGN: VITYAZ * BASIS: Vityaz (ex-Mars) * METHOD/DEVICE: Grab (GRAB)
+	VITYAZ6352-DR * LATITUDE: 18.316700 * LONGITUDE: 178.333300 * ELEVATION: -1630.0 m * LOCATION: Marcus-Necker Ridge * CAMPAIGN: VITYAZ * BASIS: Vityaz (ex-Mars) * METHOD/DEVICE: Dredge (DRG)
+	VITYAZ6364-7 * LATITUDE: 21.166667 * LONGITUDE: 163.216667 * ELEVATION START: -2310.0 m * ELEVATION END: -2400.0 m * LOCATION: Pacific Ocean * CAMPAIGN: VITYAZ * BASIS: Vityaz (ex-Mars)
+License:	Creative Commons Attribution 3.0 Unported (CC-BY-3.0) (URI: https://creativecommons.org/licenses/by/3.0/)
+Size:	4 datasets
+*/
+/* TABULAR SUMMARY OF DATASETS LISTED IN THIS COLLECTION: */
+Filename	Citation of child dataset
+Tambiev-Baturin-1982_Tab1.tab	Tambiev, Sergey B; Baturin, Gleb N (1982): (Table 1) Contents of P2O5, organic carbon, and REE in recent diatomaceous ooze and phosphorites from the Namibian shelf. https://doi.org/10.1594/PANGAEA.778161
+Tambiev-Baturin-1982_Tab2.tab	Tambiev, Sergey B; Baturin, Gleb N (1982): (Table 2) Contents of P2O5 and REE in Late Quaternary phosphorite nodules from Chile and Peru shelves. https://doi.org/10.1594/PANGAEA.778162
+Tambiev-Baturin-1982_Tab3.tab	Tambiev, Sergey B; Baturin, Gleb N (1982): (Table 3) Contents of P2O5 and total REE in phosphorites from Pacific seamonts. https://doi.org/10.1594/PANGAEA.778163
+Tambiev-Baturin-1982_Tab4.tab	Tambiev, Sergey B; Baturin, Gleb N (1982): (Table 4) Contents of P2O5 and REE in phosphorites from Pacific seamounts. https://doi.org/10.1594/PANGAEA.778164

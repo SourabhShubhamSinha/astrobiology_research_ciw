@@ -1,0 +1,66 @@
+/* DATA DESCRIPTION:
+Citation:	Huck, Claire E; van de Flierdt, Tina; Bohaty, Steven M; Hammond, Samantha J (2017): (Table 2) Rare earth element concentration data for fish tooth samples [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.875928, 
+	In supplement to: Huck, CE et al. (2017): Antarctic climate, Southern Ocean circulation patterns, and deep water formation during the Eocene. Paleoceanography, https://doi.org/10.1002/2017PA003135
+Project(s):	Deep Sea Drilling Project (DSDP) (URI: https://www.deepseadrilling.org/)
+	Integrated Ocean Drilling Program / International Ocean Discovery Program (IODP) (URI: https://www.iodp.org/)
+	Ocean Drilling Program (ODP) (URI: https://www-odp.tamu.edu:443/)
+Coverage:	MEDIAN LATITUDE: -46.099287 * MEDIAN LONGITUDE: 126.320714 * SOUTH-BOUND LATITUDE: -63.310230 * WEST-BOUND LONGITUDE: 82.787800 * NORTH-BOUND LATITUDE: -17.024000 * EAST-BOUND LONGITUDE: 166.191300
+	DATE/TIME START: 1972-12-22T00:00:00 * DATE/TIME END: 2000-05-03T21:00:00
+	MINIMUM DEPTH, sediment/rock: 148.20 m * MAXIMUM DEPTH, sediment/rock: 998.73 m
+Event(s):	28-264A * LATITUDE: -34.968800 * LONGITUDE: 112.044700 * DATE/TIME: 1972-12-22T00:00:00 * ELEVATION: -2876.0 m * PENETRATION: 158.5 m * RECOVERY: 33.2 m * LOCATION: Indian Ocean//PLATEAU * CAMPAIGN: Leg28 * BASIS: Glomar Challenger (URI: https://www-odp.tamu.edu:443/glomar.html) * METHOD/DEVICE: Drilling/drill rig (DRILL) * COMMENT: 4 cores; 38 m cored; 0 m drilled; 87.4 % recovery
+	29-277 * LATITUDE: -52.223800 * LONGITUDE: 166.191300 * DATE/TIME: 1973-03-11T00:00:00 * ELEVATION: -1214.0 m * PENETRATION: 472.5 m * RECOVERY: 253.4 m * LOCATION: Antarctic Ocean/PLATEAU * CAMPAIGN: Leg29 * BASIS: Glomar Challenger (URI: https://www-odp.tamu.edu:443/glomar.html) * METHOD/DEVICE: Drilling/drill rig (DRILL) * COMMENT: 45 cores; 425 m cored; 0 m drilled; 59.6 % recovery
+	119-738B * LATITUDE: -62.709000 * LONGITUDE: 82.787800 * DATE/TIME START: 1988-01-10T16:30:00 * DATE/TIME END: 1988-01-11T18:45:00 * ELEVATION: -2263.0 m * PENETRATION: 214.3 m * RECOVERY: 170.85 m * LOCATION: Indian Ocean * CAMPAIGN: Leg119 * BASIS: Joides Resolution (URI: https://www-odp.tamu.edu:443/resolutn.html) * METHOD/DEVICE: Drilling/drill rig (DRILL) * COMMENT: 24 cores; 214.3 m cored; 0 m drilled; 79.7 % recovery
+	121-757B * LATITUDE: -17.024000 * LONGITUDE: 88.181600 * DATE/TIME START: 1988-06-01T11:00:00 * DATE/TIME END: 1988-06-04T06:15:00 * ELEVATION: -1663.0 m * PENETRATION: 374.8 m * RECOVERY: 271.94 m * LOCATION: South Indian Ridge, South Indian Ocean * CAMPAIGN: Leg121 * BASIS: Joides Resolution (URI: https://www-odp.tamu.edu:443/resolutn.html) * METHOD/DEVICE: Drilling/drill rig (DRILL) * COMMENT: 43 cores; 374.8 m cored; 0 m drilled; 72.6 % recovery
+	189-1171D * LATITUDE: -48.499950 * LONGITUDE: 149.112030 * DATE/TIME START: 2000-04-14T21:00:00 * DATE/TIME END: 2000-04-22T06:45:00 * ELEVATION: -2147.8 m * PENETRATION: 958.8 m * RECOVERY: 525.4 m * LOCATION: South Pacific Ocean * CAMPAIGN: Leg189 * BASIS: Joides Resolution (URI: https://www-odp.tamu.edu:443/resolutn.html) * METHOD/DEVICE: Drilling/drill rig (DRILL) * COMMENT: 75 cores; 711.2 m cored; 247.6 m drilled; 73.9 % recovery
+	189-1172D * LATITUDE: -43.959230 * LONGITUDE: 149.928610 * DATE/TIME START: 2000-04-28T11:30:00 * DATE/TIME END: 2000-05-03T21:00:00 * ELEVATION: -2621.7 m * PENETRATION: 766.5 m * RECOVERY: 237.09 m * LOCATION: Tasman Sea * CAMPAIGN: Leg189 * BASIS: Joides Resolution (URI: https://www-odp.tamu.edu:443/resolutn.html) * METHOD/DEVICE: Drilling/drill rig (DRILL) * COMMENT: 31 core; 297.9 m cored; 468.6 m drilled; 79.6 % recovery
+	318-U1356A * LATITUDE: -63.310230 * LONGITUDE: 135.998960 * ELEVATION: -4003.0 m * RECOVERY: 350.14 m * CAMPAIGN: Exp318 (Wilkes Land) * BASIS: Joides Resolution (URI: https://www-odp.tamu.edu:443/resolutn.html) * METHOD/DEVICE: Drilling/drill rig (DRILL) * COMMENT: 106 cores; 1006.4 m cored; 35 % recovered; 0 m drilled; 1006.4 m penetrated
+Parameter(s):	Event label (Event) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Latitude of event (Latitude) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Longitude of event (Longitude) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Elevation of event [m] (Elevation) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Sample code/label (Sample label) * PI: Huck, Claire E (c.e.huck@soton.ac.uk) * METHOD/DEVICE: DSDP/ODP/IODP sample designation (URI: hdl:10013/epic.27914.d001)
+	Sample comment (Sample comment) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	DEPTH, sediment/rock [m] (Depth sed) * GEOCODE * PI: Huck, Claire E (c.e.huck@soton.ac.uk) * COMMENT: mbsf
+	Lanthanum [mg/kg] (La) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Cerium [mg/kg] (Ce) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Praseodymium [mg/kg] (Pr) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Neodymium [mg/kg] (Nd) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Samarium [mg/kg] (Sm) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Europium [mg/kg] (Eu) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Gadolinium [mg/kg] (Gd) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Terbium [mg/kg] (Tb) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Dysprosium [mg/kg] (Dy) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Yttrium [mg/kg] (Y) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Holmium [mg/kg] (Ho) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Erbium [mg/kg] (Er) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Thulium [mg/kg] (Tm) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Ytterbium [mg/kg] (Yb) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+	Lutetium [mg/kg] (Lu) * PI: Huck, Claire E (c.e.huck@soton.ac.uk)
+License:	Creative Commons Attribution 3.0 Unported (CC-BY-3.0) (URI: https://creativecommons.org/licenses/by/3.0/)
+Size:	408 data points
+*/
+Event	Latitude	Longitude	Elevation [m]	Sample label	Sample comment	Depth sed [m]	La [mg/kg]	Ce [mg/kg]	Pr [mg/kg]	Nd [mg/kg]	Sm [mg/kg]	Eu [mg/kg]	Gd [mg/kg]	Tb [mg/kg]	Dy [mg/kg]	Y [mg/kg]	Ho [mg/kg]	Er [mg/kg]	Tm [mg/kg]	Yb [mg/kg]	Lu [mg/kg]
+121-757B	-17.0240	88.1816	-1663	121-757B-21X-2,69-74	Pelagic Sites	184.89	149	172	34	152	31	8	39	5	33	313	7	20	2	12	2
+28-264A	-34.9688	112.0447	-2876	28-264A-3R-6,120-125	Pelagic Sites	148.20	197	118	45	191	39	9	47	6	42	362	9	26	3	16	2
+29-277	-52.2238	166.1913	-1214	29-277-38R-2,70-72	Pelagic Sites	389.20	525	548	128	553	115	25	122	17	106	935	23	64	8	40	6
+119-738B	-62.7090	82.7878	-2263	119-738B-24X-3,64-66	Pelagic Sites	207.60	197	118	45	191	39	9	47	6	42	362	9	26	3	16	2
+318-U1356A	-63.3102	135.9990	-4003	318-U1356A-67R-2,27-31	Shelf Sites	633.47	2151	5539	605	2421	535	135	562	94	492	2740	109	277	45	228	47
+318-U1356A	-63.3102	135.9990	-4003	318-U1356A-78R-5,50-54	Shelf Sites	743.00	6677	15924	1752	7185	1418	266	1345	178	950	5510	176	441	54	308	47
+318-U1356A	-63.3102	135.9990	-4003	318-U1356A-85R-1,67-72	Shelf Sites	805.37	3014	8456	832	3426	736	137	737	105	591	3159	112	282	35	207	29
+318-U1356A	-63.3102	135.9990	-4003	318-U1356A-94R-1,55-59	Shelf Sites	881.95	1191	4454	404	1751	420	105	440	67	394	2059	76	192	24	138	19
+318-U1356A	-63.3102	135.9990	-4003	318-U1356A-94R-3,55-59	Shelf Sites	883.40	3785	13971	1305	5761	1471	363	1600	257	1615	8315	324	891	123	759	107
+318-U1356A	-63.3102	135.9990	-4003	318-U1356A-95R-2,100-104	Shelf Sites	893.48	498	1635	169	729	180	45	194	31	194	1076	38	102	14	78	11
+318-U1356A	-63.3102	135.9990	-4003	318-U1356A-99R-1,85-88	Shelf Sites	930.27	592	2738	221	976	241	58	264	40	248	1323	50	140	18	112	16
+318-U1356A	-63.3102	135.9990	-4003	318-U1356A-101R-1,57-61	Shelf Sites	949.37	405	1730	149	682	179	45	210	32	208	1168	41	112	15	90	13
+318-U1356A	-63.3102	135.9990	-4003	318-U1356A-102R-1,57-61	Shelf Sites	958.40	720	3166	277	1261	339	86	394	62	387	1984	76	211	28	163	24
+318-U1356A	-63.3102	135.9990	-4003	318-U1356A-103R-1,56-60	Shelf Sites	968.56	999	4863	442	1984	502	122	521	81	490	2523	97	264	36	223	32
+318-U1356A	-63.3102	135.9990	-4003	318-U1356A-104R-4,57-61	Shelf Sites	981.00	572	2913	240	1049	282	78	309	51	276	1258	56	141	21	109	20
+318-U1356A	-63.3102	135.9990	-4003	318-U1356A-105R-4,63-67	Shelf Sites	992.12	72	300	26	113	31	8	35	6	36	193	7	20	3	16	2
+318-U1356A	-63.3102	135.9990	-4003	318-U1356A-106R-2,57-61	Shelf Sites	998.73	513	2182	201	925	244	61	267	42	253	1316	50	135	18	107	15
+189-1171D	-48.4999	149.1120	-2148	189-1171D-42R-3,50-54	Shelf Sites,  uncleaned sample subject to cleaning with only MQ water and methanol	635.50	1576	5156	381	1575	343	77	376	56	349	2150	71	196	26	149	22
+189-1171D	-48.4999	149.1120	-2148	189-1171D-42R-3,50-54	Shelf Sites, cleaned sample subject to full oxidative-reductive cleaning protocol	635.50	933	2947	224	913	210	49	236	38	242	1464	49	138	18	101	14
+189-1171D	-48.4999	149.1120	-2148	189-1171D-71R-2,85-87	Shelf Sites,  uncleaned sample subject to cleaning with only MQ water and methanol	912.85	995	4184	509	2389	640	136	653	95	526	2382	89	202	21	102	13
+189-1171D	-48.4999	149.1120	-2148	189-1171D-71R-2,85-87	Shelf Sites, cleaned sample subject to full oxidative-reductive cleaning protocol	912.85	561	2328	288	1360	358	77	370	54	295	1355	50	110	11	54	6
+189-1172D	-43.9592	149.9286	-2622	189-1172D-8R-1,55.5-59.5	Shelf Sites,  uncleaned sample subject to cleaning with only MQ water and methanol	536.36	756	3555	241	1024	240	50	246	37	228	1243	45	124	17	96	14
+189-1172D	-43.9592	149.9286	-2622	189-1172D-8R-1,55.5-59.5	Shelf Sites, cleaned sample subject to full oxidative-reductive cleaning protocol	536.36	458	2056	141	606	141	31	145	22	137	828	28	75	10	59	8
+189-1172D	-43.9592	149.9286	-2622	189-1172D-12R-5,70-72	Shelf Sites	580.90	265	882	95	428	110	26	116	18	114	606	23	65	9	56	8
