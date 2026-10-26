@@ -162,7 +162,7 @@ KNOWN_UNIT_ERRORS = {
 }
 
 META_COLS = ["sample_id", "location", "lat", "lon", "age_ma", "mineral", "spot", "rim_core",
-             "primary_secondary", "alteration"]
+             "primary_secondary", "alteration", "p2o5_wt"]
 
 
 def apatite_table(processed_dir, elements=None, require=None, level="spot",
