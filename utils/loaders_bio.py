@@ -191,6 +191,7 @@ def load_tambiev1982(folder, name="Tambiev1982_phosphorite", min_p2o5=15.0):
 # --------------------------------------------------------------------------
 # de Winter et al. - archaeological human enamel, micro-XRF line scans with a
 # diffusion-adsorption model: C0 = unaltered interior, C1 = diagenetic surface
+# (failed fits are removed - see below)
 # --------------------------------------------------------------------------
 def load_dewinter(model_xlsx, name="deWinter_enamel"):
     d = pd.read_excel(model_xlsx, header=0, skiprows=[1])
@@ -198,6 +199,12 @@ def load_dewinter(model_xlsx, name="deWinter_enamel"):
                  "element", "element_no", "C0", "C0_se", "C1", "C1_se", "C2", "C2_se", "x0", "x0_se",
                  "t", "t_se", "C1_C0"] + list(d.columns[20:])
     d = d[d["leach_from"].eq("out")]                       # profiles from the outer enamel surface
+    # Drop failed model fits: non-positive values, relative standard error > 50 %,
+    # or values above 50 wt% (impossible in apatite). ~10-30 % of fits per element fail.
+    for col, se in [("C0", "C0_se"), ("C1", "C1_se")]:
+        v, e = pd.to_numeric(d[col], errors="coerce"), pd.to_numeric(d[se], errors="coerce")
+        bad = (v <= 0) | (e.abs() / v.abs() > 0.5) | (v > 5e5)
+        d[col] = v.where(~bad)
     key = ["Locality", "Locality_type", "Specimen", "Tooth", "Profile", "From_side"]
     rows = []
     for endmember, col, cls in [("profile_interior", "C0", "modern_bioapatite"),
