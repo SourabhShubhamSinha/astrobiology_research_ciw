@@ -1,0 +1,99 @@
+digraph method {
+  graph [rankdir=TB, fontname="Inter", fontsize=11, nodesep=0.35, ranksep=0.32, bgcolor="white",
+         pad=0.25, newrank=true, splines=spline];
+  node  [fontname="Inter", fontsize=10.5, color="#52514e", penwidth=1.1, style=filled,
+         fillcolor="white", fontcolor="#0b0b0b", margin="0.14,0.07"];
+  edge  [color="#52514e", penwidth=1.0, arrowsize=0.7, fontname="Inter", fontsize=9.5, fontcolor="#52514e"];
+
+  // ---------------- shared trunk ----------------
+  start  [shape=box, style="rounded,filled", fillcolor="#f1f0ec", label="Start"];
+  data   [shape=polygon, sides=4, skew=0.18, fixedsize=true, width=4.6, height=0.85, fillcolor="#f1f0ec",
+          label="Input: public apatite analyses\nGEOROC; O'Sullivan et al. 2020 (PANGAEA);\nfish teeth, phosphorites, recent marine grains, enamel"];
+  compile[shape=box, label="Compile data\nconvert to ppm, flag values below detection,\nattach study, rock type and origin"];
+  qc     [shape=box, label="Quality control\nfix unit errors, remove duplicate studies\nand failed fits, check study offsets"];
+  feat   [shape=box, label="Build two feature sets\nEnvironment: Ce, Eu, Y anomalies (REE lambda fit)\nCrystal chemistry: log Sr, Ba, Mg"];
+  isbase [shape=diamond, label="Abiotic\nGEOROC\nsample?", fixedsize=true, width=1.55, height=1.05];
+  base   [shape=cylinder, fillcolor="#e9e8e3",
+          label="Abiotic reference\nigneous, metamorphic,\nmagmatic-hydrothermal"];
+  test   [shape=box, style="rounded,filled,dashed", fillcolor="white",
+          label="Test samples\nheld-out abiotic (O'Sullivan),\nphosphorites, marine grains,\nfish teeth, enamel"];
+
+  start -> data -> compile -> qc -> feat -> isbase;
+  isbase -> base [xlabel=" yes "];
+  isbase -> test [xlabel=" no "];
+
+  // ---------------- Method 1: GMM ----------------
+  subgraph cluster_gmm {
+    label="";
+    style="rounded,filled"; fillcolor="#eef4fc"; color="#2a78d6"; penwidth=1.2; fontcolor="#184f95"; fontsize=11.5;
+    m1t    [shape=plaintext, style="", fontsize=12, fontcolor="#184f95", label=<<b>Method 1: Baseline scoring</b><br/><font point-size="10">built from the abiotic reference only</font>>];
+    fitk   [shape=box, label="Fit Gaussian mixture models to the\nreference only (k = 1-12 components);\nkeep the k with the lowest BIC"];
+    score  [shape=box, label="Score every sample: surprisal percentile\n= fraction of reference samples that\nare more typical (missing elements\nintegrated out)"];
+    thr    [shape=diamond, label="Score\n> 0.95?", fixedsize=true, width=1.2, height=0.85];
+    usual  [shape=box, style="rounded,filled", fillcolor="white", label="Consistent with\nabiotic reference"];
+    unus   [shape=box, style="rounded,filled", fillcolor="white", label="Unusual relative to\nabiotic reference"];
+    dirn   [shape=box, label="Departure direction: vector from the\nnearest reference cluster;\ngroup coherence and cosine similarity"];
+    seaw   [shape=diamond, label="Matches a known\nabiotic direction\n(e.g. seawater)?", fixedsize=true, width=1.9, height=1.15];
+    expl   [shape=box, style="rounded,filled", fillcolor="white", label="Explained by an\nabiotic process"];
+    unexp  [shape=box, style="rounded,filled", fillcolor="#fde7dc", color="#d95926", label="Unexplained departure\n(candidate for follow-up)"];
+  }
+
+  // ---------------- Method 2: KDE ----------------
+  subgraph cluster_kde {
+    label="";
+    style="rounded,filled"; fillcolor="#fdf1eb"; color="#eb6834"; penwidth=1.2; fontcolor="#a8401a"; fontsize=11.5;
+    m2t    [shape=plaintext, style="", fontsize=12, fontcolor="#a8401a", label=<<b>Method 2: Density check</b><br/><font point-size="10">all samples, uses group labels</font>>];
+    pool   [shape=box, label="Pool reference and test samples;\nz-score features at each stage"];
+    kde    [shape=box, label="Leave-one-out Gaussian KDE\n(Scott's-rule bandwidth),\ngroups added stage by stage"];
+    share  [shape=box, label="For each sample: share of its\ndensity from reference neighbours"];
+    cmp    [shape=diamond, label="Share well below\n(nG - 1)/(n - 1)\n= 0.82?", fixedsize=true, width=1.9, height=1.15];
+    mixed  [shape=box, style="rounded,filled", fillcolor="white", label="Mixed with the\nabiotic reference"];
+    own    [shape=box, style="rounded,filled", fillcolor="white", label="Forms its own\ncompositional group"];
+  }
+
+  base -> m1t [style=invis]; m1t -> fitk [style=invis];
+  base -> fitk;
+  fitk -> score;
+  test -> score [style=dashed, xlabel=" scored  "];
+  score -> thr;
+  thr -> usual [xlabel=" no "];
+  thr -> unus  [xlabel=" yes "];
+  unus -> dirn;
+  dirn -> seaw;
+  seaw -> expl  [xlabel=" yes "];
+  seaw -> unexp [xlabel=" no "];
+
+  test -> m2t [style=invis]; m2t -> pool [style=invis];
+  base -> pool;
+  test -> pool [style=dashed];
+  pool -> kde -> share -> cmp;
+  cmp -> mixed [xlabel=" no "];
+  cmp -> own   [xlabel=" yes "];
+
+  // ---------------- outputs ----------------
+  out1 [shape=polygon, sides=4, skew=0.18, fixedsize=true, width=3.6, height=0.6, fillcolor="#f1f0ec", label="Output: unusualness scores (Figs. 1-2)\nand departure directions (Fig. 5)"];
+  out2 [shape=polygon, sides=4, skew=0.18, fixedsize=true, width=2.9, height=0.6, fillcolor="#f1f0ec", label="Output: density-share plot (Fig. 4)"];
+  stop [shape=box, style="rounded,filled", fillcolor="#f1f0ec", label="End"];
+  usual -> out1; expl -> out1; unexp -> out1;
+  mixed -> out2; own -> out2;
+  out1 -> stop; out2 -> stop;
+
+  { rank=same; base -> test [style=invis, weight=5]; }
+  { rank=same; fitk; pool; }
+  { rank=same; m1t; m2t; }
+
+  // ---------------- legend ----------------
+  subgraph cluster_legend {
+    label="Symbols"; labeljust="l"; style="rounded"; color="#c3c2b7"; fontsize=10; fontcolor="#52514e";
+    node [fontsize=9, margin="0.08,0.04"];
+    l1 [shape=box, style="rounded,filled", fillcolor="#f1f0ec", label="Start / end"];
+    l2 [shape=polygon, sides=4, skew=0.18, fixedsize=true, width=1.3, height=0.4, fillcolor="#f1f0ec", label="Input / output"];
+    l3 [shape=box, label="Process"];
+    l4 [shape=diamond, label="Decision", fixedsize=true, width=0.95, height=0.6];
+    l5 [shape=cylinder, fillcolor="#e9e8e3", label="Data store"];
+    l6 [shape=box, style="rounded,filled", fillcolor="white", label="Result"];
+    l1 -> l2 -> l3 -> l4 -> l5 -> l6 [style=invis];
+  }
+  { rank=same; l1; l2; l3; l4; l5; l6; }
+  stop -> l1 [style=invis];
+}
